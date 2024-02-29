@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "newLine": "lf",
+    "baseUrl": ".",
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "noEmit": false,
+
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/src": [
+        "./src/*"
+      ]
+    },
+  },
+  "exclude": [
+    "**/node_modules/",
+    "**/.*/*",
+    "dist"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mts",
+    "**/*.js",
+    "**/*.cjs",
+    "**/*.mjs",
+    "**/*.jsx",
+    "**/*.json"
+  ]
+}
