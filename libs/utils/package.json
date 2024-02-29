@@ -1,0 +1,26 @@
+{
+  "name": "@deroy/utils",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "del ./tsconfig.tsbuildinfo ./node_modules/.cache",
+    "clean:deps": "del node_modules"
+  },
+  "devDependencies": {
+    "clsx": "^2.1.0",
+    "del-cli": "^5.1.0",
+    "tailwind-merge": "^2.2.1"
+  },
+  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "src",
+    "index.ts"
+  ],
+  "packageManager": "yarn@4.1.0"
+}

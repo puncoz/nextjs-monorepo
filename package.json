@@ -5,7 +5,9 @@
   "scripts": {
     "clean": "yarn workspaces foreach --all run clean && del ./node_modules/.cache",
     "clean:deps": "yarn workspaces foreach --all -pt run clean:deps && del node_modules",
-    "admin": "yarn workspace @deroy/admin"
+    "admin": "yarn workspace @deroy/admin",
+    "components": "yarn workspace @deroy/components",
+    "utils": "yarn workspace @deroy/utils"
   },
   "devDependencies": {
     "del-cli": "^5.1.0",
